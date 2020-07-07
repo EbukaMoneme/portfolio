@@ -1,2 +1,15 @@
 /* import fonts from font.css file */
 @import url(./fonts.css);
+
+
+/* start navigation */
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 4rem;
+}
+
+.header_area .main-menu .navbar{
+    /* padding: 1rem 20rem; */
+}
+
+
+/* end navigation */
