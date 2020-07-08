@@ -1,14 +1,23 @@
 /* import fonts from font.css file */
 @import url(./fonts.css);
 
-
+/* CSS Variables */
+@import url(./partials/_variables.css);
 /* start navigation */
 .header_area .main-menu .navbar .navbar-brand{
-    padding: 0 2rem 0 4rem;
+    padding: 0 2rem 0 1rem;
 }
 
 .header_area .main-menu .navbar{
-    /* padding: 1rem 20rem; */
+    padding: 1rem 2rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family:var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color:var(--title-color);
 }
 
 
