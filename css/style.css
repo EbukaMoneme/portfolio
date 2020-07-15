@@ -1,8 +1,14 @@
+/* CSS reset */
+/* @import url(./reset.css); */
+
 /* import fonts from font.css file */
-@import url(./fonts.css);
+@import url('./fonts.css');
 
 /* CSS Variables */
 @import url(./partials/_variables.css);
+
+/* Import Global Styling */
+@import url(./partials/_global.css);
 
 /* start navigation */
 .header_area .main-menu .navbar .navbar-brand{
@@ -15,9 +21,7 @@
 
 .header_area .main-menu .nav-item .nav-link{
     font:normal 500 15px/2px var(--roboto);
-
     text-transform: uppercase;
-
     padding: 1.7rem;
     color:var(--title-color);
 }
@@ -39,38 +43,77 @@
 
 
 /* Banner Area */
-/* .site-main .site-banner{
-    background:url(../img/banner/) no repeat 0% 50%;
-} */
 
-.site-main .site-banner .site-title h3{
-    /* padding-top: 35%; */
-    font-weight: 500;
+/* KEEP IT CLEAN - NO BACKGROUND */
+/* .site-main .site-banner{
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+} */
+/* KEEP IT CLEAN - NO BACKGROUND */
+
+.site-main .site-banner .row{
+    margin-right: -5px;
+    margin-left: 45px;
 }
 
-/* .site-main .site-banner .site-title h3::after{
+.site-main .site-banner .site-title h1{
+    padding-top: 20%;
+    /* font-weight: 500; */
+    font-weight: normal;
+    margin: 0px 0px 20px 6px;
+    font-size: 1.2rem;
+    font-family: Roboto-Italic;
+    /* font-family: Tillana; */
+
+}
+
+/* KEEP IT CLEAN - NO LINE AFTER HI */
+/* .site-main .site-banner .site-title h1::after{
     content: "";
     height: 2px;
     width: 18vw;
-    background: black;
+    background: var(--gradient-color);
     display: inline-block;
     margin-left: 5%;
     transform: translateY(-10px);
 } */
+/* KEEP IT CLEAN - NO LINE AFTER HI */
 
-.site-main .site-banner .site-title h1{
-    font-size: 5rem;
+.site-main .site-banner .site-title h2{
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 0px;
+    font-weight: 600;
+    font-family: Montserrat-Bold;
 }
 
-.site-main .site-banner .site-title h4{
-    font-size: 1.5rem;
+.site-main .site-banner .site-title h3{
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: Montserrat-Bold;
+}
+.site-main .site-banner .site-title .desc{
+    padding-top:20px;
+    font-family: Roboto;
+    color: black;
+    font-size: 18px;
 }
 
 .site-main .site-banner .banner-image>img{
-    /* padding: 7rem 0; */
+    padding: 4rem 0;
     width: 90rem;
 }
 
+/* .site-main .site-banner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../img/wavysection.png") center no-repeat;
+    background-size: cover;
+ } */
 
 
 /* End Banner Area */
